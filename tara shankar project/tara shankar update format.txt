@@ -1,0 +1,444 @@
+Good Morning Sir,
+ 
+Today's update:
+Benevity performance tuning completed - Code is taking 35-40 seconds to load data for the year 2024.
+Code(BenevityLoad.py) is deployed to Development/Dev and I've loaded data and installed all required packages via VM.
+ 
+Logging off for today a little bit early
+please call if any Question
+Thank you
+Have a Nice day.
+
+
+
+Good morning, sir,
+
+Today’s update:
+
+1. I have reviewed the DMS to GL mapping document and i've checked all table also in DMSQA Envoirement and saved it in our new DOCUMENT folder at:
+   C:\Users\shankart\Documents\ERNI project Doc\TRUST\GLInterface package
+2. I’ve added descriptions for each step in the GLInterface package.
+
+
+logging off a bit early today.
+Thank you sir, 
+please let me know if you have any questions.
+Have a great day sir.
+
+
+
+Good morning Sir,
+
+Today's update :
+
+I reviewed the QA dashboard and analyzed the data for APG-CS unmatched records from August 3rd to 5th. 
+I've included the SQL queries and snapshots of the findings for each specific Merchant ID. I also checked the records in DATADB,
+and they are present there. However, the corresponding files for those Merchant IDs are missing in the CYBERSOURCE folder.
+I've added snapshots for each step of the process.
+Documents are saved in - ERNI PROJECT DOC\TRUST\ERNI-1049
+
+I'm logging off for the day.
+Thank you, Sir.
+Please let me know if you have any questions. 
+Have a great day
+
+
+Good morning Sir,
+
+Today's update :
+
+I reviewed the QA dashboard and analyzed the data for APG-dms unmatched records now has no record in unmatched_states for APG
+I've reviewed the data for 31 and 30 july data in QA sever and i've added SQL queries and snapshots of the findings for each date. I also checked the records in DATADB,
+and now no of count data is different for 30 july. I've added snapshots for each step of the process.
+for QA dashboard displaying data in unmatched up to date 5th august, but in QA table have latest data in unmatched tables, 
+IN SQL SERVER tab open with all Query.
+Documents are saved in - ERNI PROJECT DOC\TRUST\ERNI-1077
+
+please ping if any Questions
+Thank you
+Have a Nice day.
+
+
+
+Good morning Sir,
+
+Today's update :
+
+1. Updated the ERNI-1077 document file.
+2. i Reviewed and updated the .sql file and created a prescript.bat and postscript.bat file for PROD.
+3. Changed the branch specifier to Deployment\Dev, saved the changes, and deployed them into Deployment\Dev.
+4. Ran the VM in the development environment and loading compeleted under 15 minute now in dev have latest data.
+
+Documents are saved at -
+ 1. ERNI PROJECT DOC\TRUST\PROD_release_08222024\(.sql and prescript & postscript)
+ 2. ERNI PROJECT DOC\TRUST\ERNI-1077\
+
+please ping if any Questions
+Thank you
+Have a Nice day.
+
+
+
+
+Good morning Sir,
+
+Today's update :
+
+Today, I analyed of all tables within the trust schema in both the QA and Production environments.
+I compared every table and column, including data types, between QA and PROD environments. 
+I created an .sql file to address missing indexes, and mismatches in data types between QA and Production.
+Additionally, I prepared a prescript file for applying the necessary changes in Production.
+
+Documents are saved at -
+1. ERNI PROJECT DOC\TRUST\QA and PROD comparison 20240905
+
+logging off for today
+please ping if any Questions
+Thank you
+Have a Nice day.
+
+
+Good morning Sir,
+
+Today's update :
+
+I reviewed the Enrichment code to understand the entire process and how it works. I also analyzed how to incorporate the elements mentioned in the ticket. 
+There are a few points I’d like to discuss further. Additionally, I requested the related macro code in Excel, and Vijay Sir will be assisting with that.
+
+Apologies for the delay; we were celebrating "Ganesh Chaturthi" in the office, so not all tasks were completed. 
+I’ll make sure to finish the pending work on Monday.
+
+
+Logging off a little early today
+Thank you for your understanding
+Have a great day.
+
+
+Good morning Sir,
+
+Today's update :
+
+I have checked and tested all SQL queries in the .sql file in the DEV environment.
+The file includes all the necessary queries to be loaded into Production.
+I've added queries to alter the column size by dropping the index, changing the column size, and then recreating the index.
+Everything has been tested in DEV, and the queries are working fine.
+
+please reviews ones .sql file.
+
+Logging off a little early today,
+please ping if any Questions,
+Thank you
+Have a Nice day.
+
+
+
+
+Good morning Sir,
+
+I've to discuss about that all points which is mentioned on ticket ERNI- 1093
+I've created the SQL query for each and every  points,Query opened in sql server in (DATAETLQA)
+for that can i explain in tomorrow morning?
+
+Please ping me if any Query,
+Thank you sir
+Have a nice day. 
+
+
+
+Good morning Sir,
+
+Today's update :
+I've created the SQL query for each and every  points, and result is also displaying as expected
+but need to check all logic is valid or not and I have union the all SELECT Query and run the query 
+query is working fine.
+
+Please check once all the code and verify the query is good or not as expected
+query is open in sql server.
+
+logging off little bit early today I will travel 3-4 hrs, Once I reached i'll connect again. 
+I have to discuss and also wants help from you in that query.
+Please ping me if any Query,
+Thank you sir
+Have a nice day. 
+
+
+
+Good morning Sir,
+
+Today's update :
+
+
+I’ve tested the PROCEDURE for both current and previous data, 
+ensuring that all check criteria and SQL logic are working as expected.
+I have created a document that includes all relevant snapshots, 
+and it is saved at Document\ERNI PROJECT DOC\TRSUT\ERNI-1093 RELIABILITY CHECKLIST\CHECK CRITERIA VALIDATIONS.docx
+
+
+logging off little bit early today,
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+
+Good morning Sir,
+
+Today's update:
+
+
+1. 	I have created a branch for ERNI-1176 and modified the BAI code according to business requirements. 
+2. 	In the EMAF code, I have implemented the logic for >= and <= and loaded historical data 
+	from January 1, 2024, to October 9, 2024. I checked the count of data for each transaction date in both dataetldev and datadb, 
+	and I have created a list in Excel for both datasets to compare. All data is matching as expected.
+
+Document saved at "Document\ERNI PROJECT DOC\TRSUT\ERNI-1177"
+
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+Good morning Sir,
+
+Today's update:
+
+I executed the BAI.py code, and it worked as expected. All 20 files connected to "ctmt357d" have been successfully loaded into the BAI table.
+
+I also reviewed the ACH, EFT, and Wires loaders. The ACH and EFT loaders are skipping, while only the Wires loader is active. However, 
+no data was inserted for wires either, since the SQL query in wires.py is searching for a description of "Coming Money Transfer," 
+which is not present in any of the files.
+
+
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+
+
+Good morning Sir,
+
+Today's update:
+
+
+I’ve created a new branch for the ERNI-1165 ticket and applied the logic in the EMAF.py code. 
+I pushed this to Bitbucket using the branch name and ran the code on the VM for the latest run for October. 
+I also compared the data from datadb and verified that the record counts from both dataset dev and datadb match.
+
+I checked the procedure and removed "ach" from the condition, leaving only the EFT and "wires" loaders, which we’re not using in the check criteria.
+Document saved at "Document\ERNI PROJECT DOC\TRSUT\ERNI-1165"
+
+
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+Good morning Sir,
+
+Today's update:
+
+
+I have reviewed all join tables and relevant fields in Receiptledger.py and the associated procedures that use multiple join tables. 
+I've identified all tables utilized as join tables in Receiptledger and created a SQL query for those not included in the procedure's SQL query.
+ I also collected sample data from October 11, where I found 7 records, and applied all join tables; the results for the needed columns came out as expected.
+
+The remaining three tables with available schemas are:
+"Reconciliation"
+"Google Pay"
+"Apple Pay"
+These tables are not present in the DataDB and DMSQA server.
+
+
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+
+
+Good morning Sir,
+
+Today's update:
+
+I updated the SQL code for the check criteria procedure and tested it in QA. 
+ I created an Excel sheet listing all available trust loaders in file format, including all relevant details. 
+ I also developed a GL SQL query, incorporating the necessary column fields and required join tables for testing. 
+ The query executed successfully and returned the expected results, although some columns were missing.
+ 
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+
+Good morning Sir,
+
+Can we connect in call... for discussion
+today i've tested the ssis package with different-different test files.
+or can i explain tomarrow my morning 
+what i have tested in ssis packege, created a word documents and i have added all snapshots with every steps.
+
+
+Good morning Sir,
+
+Could we have a call to discuss? 
+Today, I tested the SSIS package with various test files.  
+or I can explain in the morning tomorrow what I tested in the SSIS package.
+I created a Word document that includes all the steps along with snapshots.
+
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+have a nice day
+
+
+Good morning Sir,
+
+Today i have Good News!
+The Task is Completed, Getting result are as expected.
+Everything i have mentioned in documents file what i did Today,
+updated daily_tracker excel file and attached all file in excel sheet and excel is opend.
+
+
+logging off for today
+Please let me know if you have any questions
+Thank you sir,
+Have a nice day
+
+
+Good Morning sir,
+
+Today updates-:
+
+1. I have reviewed all the C# (.cs) code in the 'cybersource' repository to locate the database connections where we could switch the source from TPE to DATAETL. 
+2. 'cybersource' is sensitive and complex, understanding,  the entire process is taking time. 
+3. I’ve managed to gather some information regarding the database connections, including details about the SQL Server instances and tables used within the code. I’ve m everything in an Excel sheet,
+
+Could we have a call to discuss? or will discuss in tomarrow morning..
+logging off for today
+Thank you sir,
+Have a Nice day
+
+
+Good Morning, Sir,
+
+Today's Updates:
+I have reverted all previous changes and executed the existing Cybersource package. However, the existing package is not running 
+properly and is throwing an exception related to the URL https://apitest.cybersource.com. The errors include "Resource not found" and 
+"This execution indicates that the application does not have permission to perform the action."
+
+The Cybersource solution consists of three subcategory folders:
+
+1.cybersourceAccountUpdater
+2.cybersourceReports (Updated the App.config file to modify the database connection string)
+3.cybersourceReports_DBLayer (Updated the App.config file to modify the database connection string)
+
+Among these, only the steps for cybersourceReports_DBLayer were executed successfully.
+
+logging off for today
+Please let me know if you have any questions
+Thank you, Sir.
+Have a great day
+
+
+
+Good Morning Sir,
+
+Today's Updates:
+
+1. First I've changed the database connection_string in App.config code in CYBERSOURCEREPORTS & CYBERSOURCE_DBLayer both and 
+2. I have executed the program.cs code multiple times, and it is functioning as expected, successfully loading data into the cybersource.job_load table with various merchant_id values.
+3. cybersource.job_load table already loaded the data into tables on daily basis at 9 o'clock, 
+i have updated the excel sheet, excel is opended
+
+logging off for today
+Please let me know if you have any questions
+Thank you, Sir.
+Have a great day
+
+
+
+Good Morning Sir,
+
+today's updates:
+
+I gathered information about TFS, SQL Server connections for DEV, QA, and PROD, as well as file locations.
+All details have been updated in an Excel sheet with links.
+
+I'm logging off for the day. 
+Please let me know when you're available, and I'll join again to discuss further.
+Thank you, Sir.
+Have a great day
+
+
+Good Morning Sir,
+
+today's updates:
+
+I made a data flow diagram for CyberSource and a Word document with step-by-step TFS processes,
+including snapshots. I also updated the Excel sheet. Both the Word and Excel files are attached and open.
+
+logging off for the day. 
+Please let me know if you have any Questions
+Thank you Sir,
+Have a Nice day.
+
+
+Good Morning Sir,
+
+today's updates:
+
+I have created a list of SQL Server databases that are used as variables in the Cybersource code. In the TRUST schema,
+I created the CARDPAYMENT and CS_CARDPAYMENT tables and ran the CARDPAYMENT.py script on my local system through the terminal. 
+The code ran successfully and loaded data into the CARDPAYMENT table.
+
+when I try to run it on the VM machine, I encounter an error. I was able to fix the issue on my local machine,
+and the data was successfully loaded into the table there, but the issue persists when trying to execute the code through the VM machine.
+
+
+logging off for the day. 
+Please let me know if you have any Questions
+Thank you Sir,
+Have a Nice day.
+
+
+Good Morning Sir,
+
+today's updates:
+
+I've changed the golbal.py code and push the code into bitbucket Through the Feature Branch,
+now code is running through the dev VM machine, successfully data loaded into CARDPAYMENT table.
+created a postscript.bat file for load the latest data into dev, and start the run startTRUST.bat file.
+
+logging off for the day. 
+Please let me know if you have any Questions
+Thank you Sir,
+Have a Nice day.
+
+
+Good Morning Sir,
+
+Today's Updates:
+
+CARDPAYMENT-
+1 - first, i have run the startTRUST.bat file in VM machine to load the latest data inot DEV sql server, and
+2- I reviewed the historical data for CARDPAYMENT in the DATADB SQL Server, and data is available starting from 2021-10-14. To load all historical data for CARDPAYMENT, created a prescript.bat file but now i didn't run startTRUST.bat file The reason is that the DataDB SQL Server contains historical data starting from "2021-01-16," which accounts for nearly four years of data.
+
+
+CYBERSOURCE-
+1- i have change the database connection in App.config file in CybersourceReport & cybersourceDB_Layer steps.
+2- I have documented all the steps to manually run the Program.cs code, including the line numbers and when to use the "Step Over" and "Step Into" options, in my notebook.However, I forgot to note the number of breakpoints used in the code, so I need help with that again.
+
+updated  the daily_status excel file, excel is open.
+
+Please let me know once you are available, I'll join again and will discuss,
+logging off for today
+Thank you, Sir.
+Have a great day
+

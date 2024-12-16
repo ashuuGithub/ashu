@@ -1,0 +1,14 @@
+importent notes for tara shankar project________________
+
+in case of compare QA and PROD
+for alter statement______
+alter table trust.metavante add new_column datatype (size)
+
+in case of need to chage the size of column then first check in that column have any index or not ,
+if index then first drop and run alter statement for alter the size of column and then re-create index of particular column
+
+drop index index_name on trust.metavante
+alter table trust.metavante alter column column_name (size)
+create index index_name on trust.metavante (column_name)
+
+
