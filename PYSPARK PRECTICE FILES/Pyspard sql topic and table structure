@@ -1,0 +1,120 @@
+1. Drop table if already present
+2. Create table
+3. Insert records into the table
+4. Display the records from the table
+5. Display selected columns from the table
+6. Order By clause to display records in ascending order
+7. Order By clause to display records in descending order
+8. Select top N number records from table
+9. Adding Alias to the columns
+10. Greater than operator
+11. AND Operator
+12. OR Operator
+13. Wild card search
+14. Between and AND operator
+15. Not equal to operator
+16. IN Operator
+17. NOT IN Operator
+18. Aggregate function – COUNT
+19. Aggregate function – MIN,MAX,AVG,SUM
+20. HAVING Clause
+21. Display distinct records
+22. Arithmetic Operators
+23. SUBSTRING
+24. CONCATENATE
+25. Subquery
+26. JOIN – Inner Join
+27. JOIN – LEFT Join
+28. JOIN – Right Join
+29. JOIN – FULL Join
+30. JOIN – Cross Join
+31. UNION
+32. Union ALL 
+33. Intersect
+34. Except
+35. Analytical Or Windows functions
+36. Partition By
+37. Aggregate Over
+38. Lead & Lag
+39. Common table expression
+40. Converting column data types
+41. Display Head and Tail records
+42. Display column names from a table
+43. Display columns and data types
+44. Get schema of a table
+45. Get table record count
+46. Get table column count
+47. Importing Functions and Types
+48. Filter
+49. Current Date
+50. Add / Subtract date
+51. Add / subtract month
+=====================================================
+
+
+CREATE  or replace TABLE  employees
+(
+employeeId INT,
+employeeName  STRING,
+employeeSurname STRING,
+employeeTitle STRING,
+age INT,
+city STRING,
+birthdate DATE,
+salary DECIMAL
+);
+---------------------
+CREATE TABLE IF NOT EXISTS sales
+(
+EmployeeId INT,
+Quantity DECIMAL,
+UnitPrice DECIMAL,
+City STRING,
+Date DATE
+);
+--------------------
+-- sample test data:
+
+
+INSERT INTO employees (employeeId,employeeName, employeeSurname, employeeTitle, age, city, birthdate, salary)
+VALUES 
+(1,"Ranjan", "Mahapatra", "Manager", 35, "Bhubaneswar", "1986-05-10", 65000),
+(2,"Roshan", "Mahapatra", "Trainee", 32, "Bhubaneswar", "1989-02-15", 65000),
+(3,"Sayan", "Paul", "Architect", 40, "Kolkata", "1980-08-20", 85000),
+(4,"Subhas", "Das", "Lead Designer", 29, "Kolkata", "1992-12-01", 75000),
+(5,"Santhosh", "B", "Product Owner", 38, "Hyderabad", "1984-06-06", 75000),
+(6,"Praveen", "N", "Lead Data Analyst", 31, "Chennai", "1990-09-12", 70000),
+(7,"Naresh", "M", "Sr Architect ETL", 33, "Hyderabad", "1988-07-01", 80000),
+(8,"Vignesh", "P", "Sr Architect Cloud", 36, "Bangalore", "1985-04-01", 85000),
+(9,"Jana", "S", "Account Delivery Manager", 37, "Bangalore", "1983-05-15", 100000),
+(10,"Priya", "A", "Operations Manager", 39, "Seoul", "1981-03-01", 85000),
+(11,"Murugesan", "B", "HR Manager", 30, "Dubai", "1991-12-25", 75000),
+(12,"Sravan", "K", "Architect AI", 34, "New Delhi", "1987-06-01", 78000);
+------------------
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (1, 10, 20, 'New Delhi',"2023-03-01");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (1, 5, 10, 'BBSR',"2023-03-01");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (3, 15, 15, 'HYD',"2023-03-02");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (4, 20, 30, 'CHN',"2023-03-02");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (4, 25, 10, 'Pun',"2023-03-03");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (4, 30, 20, 'BGLR',"2023-03-03");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (5, 35, 25, 'MYS',"2023-03-03");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (6, 40, 30, 'HYD',"2023-03-04");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (7, 45, 35, 'CTK',"2023-03-05");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (7, 50, 40, 'MUM',"2023-03-05");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (9, 55, 45, 'NOIDA',"2023-03-05");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (10, 60, 50, 'COIMB',"2023-03-05");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (10, 65, 55, 'UDUPI',"2023-03-06");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (NULL, 70, 60, 'MARATHALLI',"2023-03-06");
+INSERT INTO sales (EmployeeId, Quantity, UnitPrice, City, Date) VALUES (NULL, 75, 65, 'PATNA',"2023-03-08");
+-------------------------
+df = spark.table("employees");
+df.show();
+--------------------
+df_employees = spark.table("employees");
+df_employees_col = df_employees.select("employeeId", "employeeSurname", "city");
+df_employees_col.show();
+--------------------
+df_emp = spark.table("employees")
+df_emp_select = df_emp.select("employeeName", "employeeSurname", "employeeTitle")
+df_orderby = df_emp_select.orderBy("employeeName")
+df_orderby.show()
